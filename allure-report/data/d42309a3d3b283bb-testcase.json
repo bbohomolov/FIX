@@ -1,0 +1,107 @@
+{
+  "uid" : "d42309a3d3b283bb",
+  "name" : "TestClass.test_login_negative[param_test1]",
+  "title" : "Test login negative [param_test1]",
+  "time" : {
+    "start" : 1487550139963,
+    "stop" : 1487550140312,
+    "duration" : 349
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 3
+  },
+  "failure" : {
+    "message" : "AssertionError: Received response 200 status doesn't equal 400\nassert 200 == 400",
+    "stackTrace" : "self = <reqres_test.TestClass instance at 0x7f82e923bc20>\nparam_test = ('peter@klaven', '!@^&#%&*')\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Negative: Login test email/password check\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login_negative(self, param_test):\n        (email, password) = param_test\n        r = self.send_get_request(self.login_request, {'email': email, 'password': password})\n        self.attach_response(r.text)\n>       self.check_response_status(r.status_code, requests.codes.bad)\n\ntests/reqres_test.py:82: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <reqres_test.TestClass instance at 0x7f82e923bc20>, actual = 200\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \"+str(actual)+\" status doesn't equal \"+str(expected)\nE       AssertionError: Received response 200 status doesn't equal 400\nE       assert 200 == 400\n\ntests/reqres_test.py:29: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Negative: Login test email/password check",
+    "url" : "Negative: Login test email/password check"
+  },
+  "suite" : {
+    "uid" : "d5c3621ede5ef86f",
+    "name" : "reqres_test",
+    "title" : "Reqres test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487550139965,
+      "stop" : 1487550140294,
+      "duration" : 329
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487550140295,
+      "stop" : 1487550140295,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "3fd2aa49-8016-4230-aedd-527d0e3a8329-attachment.json",
+      "type" : "application/json",
+      "size" : 258,
+      "uid" : "3d5be2599e94aed2"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487550140295,
+      "stop" : 1487550140295,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "7780-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "reqres_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Login test email/password check"
+  } ],
+  "parameters" : [ ]
+}

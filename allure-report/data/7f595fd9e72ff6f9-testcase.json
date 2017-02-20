@@ -1,0 +1,122 @@
+{
+  "uid" : "7f595fd9e72ff6f9",
+  "name" : "TestClass.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1487550946768,
+    "stop" : 1487550947395,
+    "duration" : 627
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : {
+    "message" : "AssertionError: Response body doesn't contain token\nassert False",
+    "stackTrace" : "self = <reqres_test.TestClass instance at 0x7face5b93c68>\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Positive: Login test\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login(self):\n        r = self.send_get_request(self.login_request, {'email': self.email, 'password': self.password})\n        self.attach_response(r.text)\n        self.check_response_status(r.status_code, requests.codes.ok)\n>       self.check_response_body(r.text, \"token\")\n\ntests/reqres_test.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <reqres_test.TestClass instance at 0x7face5b93c68>\nactual = '{\"page\":1,\"per_page\":3,\"total\":12,\"total_pages\":4,\"data\":[{\"id\":1,\"name\":\"cerulean\",\"year\":2000,\"pantone_value\":\"15-4...uchsia rose\",\"year\":2001,\"pantone_value\":\"17-2031\"},{\"id\":3,\"name\":\"true red\",\"year\":2002,\"pantone_value\":\"19-1664\"}]}'\nexpected = 'token'\n\n    @allure.step(\"Check response body.\")\n    def check_response_body(self, actual, expected):\n        if expected in actual:\n            assert True\n        else:\n>           assert False, \"Response body doesn't contain \"+expected\nE           AssertionError: Response body doesn't contain token\nE           assert False\n\ntests/reqres_test.py:41: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Positive: Login test",
+    "url" : "Positive: Login test"
+  },
+  "suite" : {
+    "uid" : "1d18ba19e40229c4",
+    "name" : "reqres_test",
+    "title" : "Reqres test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487550946770,
+      "stop" : 1487550947353,
+      "duration" : 583
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487550947354,
+      "stop" : 1487550947354,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "86f26bed-8fee-476b-83fe-43f8485f3f7e-attachment.json",
+      "type" : "application/json",
+      "size" : 258,
+      "uid" : "420c6bc3a093eeb0"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487550947354,
+      "stop" : 1487550947354,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487550947354,
+      "stop" : 1487550947354,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "8051-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "reqres_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "testId",
+    "value" : "Positive: Login test"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  } ],
+  "parameters" : [ ]
+}

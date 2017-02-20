@@ -1,0 +1,122 @@
+{
+  "uid" : "cb65045c3cf81346",
+  "name" : "TestClass.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1487546124533,
+    "stop" : 1487546125084,
+    "duration" : 551
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : {
+    "message" : "TypeError: 'in <string>' requires string as left operand, not dict",
+    "stackTrace" : "self = <reqres_test.TestClass instance at 0x7f8e8f0e69e0>\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Positive: Login test\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login(self):\n        r = self.send_get_request(self.login_request, {'email': self.email, 'password': self.password})\n        print(r.text)\n        self.attach_response(r.text)\n        self.check_response_status(r.status_code, requests.codes.ok)\n>       self.check_response_body(\"token\", r.json())\n\ntests/reqres_test.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <reqres_test.TestClass instance at 0x7f8e8f0e69e0>, actual = 'token'\nexpected = {'data': [{'id': 1, 'name': 'cerulean', 'pantone_value': '15-4020', 'year': 2000}, {'id': 2, 'name': 'fuchsia rose', '..., {'id': 3, 'name': 'true red', 'pantone_value': '19-1664', 'year': 2002}], 'page': 1, 'per_page': 3, 'total': 12, ...}\n\n    @allure.step(\"Check response body.\")\n    def check_response_body(self, actual, expected):\n>       if expected in actual:\nE       TypeError: 'in <string>' requires string as left operand, not dict\n\ntests/reqres_test.py:20: TypeError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Positive: Login test",
+    "url" : "Positive: Login test"
+  },
+  "suite" : {
+    "uid" : "f34ab3b648242f6c",
+    "name" : "reqres_test",
+    "title" : "Reqres test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487546124536,
+      "stop" : 1487546125052,
+      "duration" : 516
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487546125052,
+      "stop" : 1487546125052,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "f13db130-c25f-40ec-bb0c-7ecfccdf9666-attachment.json",
+      "type" : "application/json",
+      "size" : 258,
+      "uid" : "dde536098d99d74a"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487546125052,
+      "stop" : 1487546125052,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487546125052,
+      "stop" : 1487546125052,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "6784-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "reqres_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "testId",
+    "value" : "Positive: Login test"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,119 @@
+{
+  "uid" : "e5252aeb160c3537",
+  "name" : "TestClass.test_login_negative_noemail",
+  "title" : "Test login negative noemail",
+  "time" : {
+    "start" : 1487553877256,
+    "stop" : 1487553877766,
+    "duration" : 510
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Negative: Login test no email",
+    "url" : "Negative: Login test no email"
+  },
+  "suite" : {
+    "uid" : "80b589fef1a9d07f",
+    "name" : "tests.login_test",
+    "title" : "Login test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487553877259,
+      "stop" : 1487553877765,
+      "duration" : 506
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487553877765,
+      "stop" : 1487553877765,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "e1e79b04-6ad2-46ea-8e2b-292af8135440-attachment.json",
+      "type" : "application/json",
+      "size" : 37,
+      "uid" : "bd4555d91e53d205"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487553877765,
+      "stop" : 1487553877765,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487553877765,
+      "stop" : 1487553877765,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.login_test"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Login test no email"
+  }, {
+    "name" : "thread",
+    "value" : "8994-MainThread"
+  } ],
+  "parameters" : [ ]
+}

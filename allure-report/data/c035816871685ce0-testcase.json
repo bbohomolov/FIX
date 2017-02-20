@@ -1,0 +1,107 @@
+{
+  "uid" : "c035816871685ce0",
+  "name" : "TestClass.test_single_user",
+  "title" : "Test single user",
+  "time" : {
+    "start" : 1487555195317,
+    "stop" : 1487555195652,
+    "duration" : 335
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 3
+  },
+  "failure" : {
+    "message" : "AssertionError: Received response 404 status doesn't equal 200",
+    "stackTrace" : "self = <tests.single_test.TestClass instance at 0x7f4f5ba13ea8>\n\n    @allure.feature(\"Single User\")\n    @allure.testcase(\"Positive: Single User test\")\n    @allure.severity(pytest.allure.severity_level.MINOR)\n    def test_single_user(self):\n        r = u.send_get_request(self.single_user_request+self.user_id)\n        u.attach_response(r.text)\n>       u.check_response_status(r.status_code, requests.codes.ok)\n\ntests/single_test.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f4f5c3633b0>, actual = 404\nexpected = 200\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 404 status doesn't equal 200\n\ntests/my_utils.py:12: AssertionError"
+  },
+  "description" : null,
+  "severity" : "MINOR",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Positive: Single User test",
+    "url" : "Positive: Single User test"
+  },
+  "suite" : {
+    "uid" : "39222951fe402979",
+    "name" : "tests.single_test",
+    "title" : "Single test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487555195319,
+      "stop" : 1487555195638,
+      "duration" : 319
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487555195639,
+      "stop" : 1487555195639,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "29fa5e5e-7fc3-4d56-8827-d6ed054e12ae-attachment.json",
+      "type" : "application/json",
+      "size" : 2656,
+      "uid" : "78dd57ef84c3f79d"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487555195639,
+      "stop" : 1487555195639,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "testId",
+    "value" : "Positive: Single User test"
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.single_test"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "thread",
+    "value" : "9488-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "Single User"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,119 @@
+{
+  "uid" : "d424574ea7ab3c37",
+  "name" : "TestClass.test_register",
+  "title" : "Test register",
+  "time" : {
+    "start" : 1487555192304,
+    "stop" : 1487555192816,
+    "duration" : 512
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Positive: Register test",
+    "url" : "Positive: Register test"
+  },
+  "suite" : {
+    "uid" : "70b72662d2dfae4a",
+    "name" : "tests.register_test",
+    "title" : "Register test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487555192306,
+      "stop" : 1487555192815,
+      "duration" : 509
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487555192815,
+      "stop" : 1487555192815,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "98d9d962-5096-4e2c-824e-09d05870cee6-attachment.json",
+      "type" : "application/json",
+      "size" : 28,
+      "uid" : "51be5aa7fd796c8c"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487555192815,
+      "stop" : 1487555192815,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487555192815,
+      "stop" : 1487555192815,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "tests.register_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "feature",
+    "value" : "Register"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "9488-MainThread"
+  }, {
+    "name" : "testId",
+    "value" : "Positive: Register test"
+  } ],
+  "parameters" : [ ]
+}

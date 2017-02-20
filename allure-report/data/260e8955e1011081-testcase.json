@@ -1,0 +1,107 @@
+{
+  "uid" : "260e8955e1011081",
+  "name" : "TestClass.test_login_negative_nopasswd",
+  "title" : "Test login negative nopasswd",
+  "time" : {
+    "start" : 1487545967719,
+    "stop" : 1487545983268,
+    "duration" : 15549
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 3
+  },
+  "failure" : {
+    "message" : "TypeError: check_response_status() takes exactly 2 arguments (3 given)",
+    "stackTrace" : "self = <reqres_test.TestClass instance at 0x7fd63054b830>\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Negative: Login test no password\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login_negative_nopasswd(self):\n        r = self.send_get_request(self.login_request, {'email': self.email})\n        print(r.text)\n        self.attach_response(r.text)\n>       self.check_response_status(r.status_code, requests.codes.bad)\n\ntests/reqres_test.py:50: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\na = (<reqres_test.TestClass instance at 0x7fd63054b830>, 200, 400), kw = {}\n\n    @wraps(func)\n    def impl(*a, **kw):\n        with StepContext(self.allure, self.title.format(*a, **kw)):\n>           return func(*a, **kw)\nE           TypeError: check_response_status() takes exactly 2 arguments (3 given)\n\n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: TypeError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Negative: Login test no password",
+    "url" : "Negative: Login test no password"
+  },
+  "suite" : {
+    "uid" : "e965f76dd3e7e50b",
+    "name" : "reqres_test",
+    "title" : "Reqres test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487545967721,
+      "stop" : 1487545983252,
+      "duration" : 15531
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487545983253,
+      "stop" : 1487545983253,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "337783df-736e-4be4-898e-0285a7be06db-attachment.json",
+      "type" : "application/json",
+      "size" : 258,
+      "uid" : "2bdd5000d71dc695"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487545983253,
+      "stop" : 1487545983253,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "reqres_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Login test no password"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "6655-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  } ],
+  "parameters" : [ ]
+}

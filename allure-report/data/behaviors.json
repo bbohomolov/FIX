@@ -1,0 +1,270 @@
+{
+  "features" : [ {
+    "title" : "Single User",
+    "statistic" : {
+      "total" : 2,
+      "passed" : 2,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "b227ff6c0ced7c5",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 2,
+        "passed" : 2,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "370e5bcae48dc881",
+        "name" : "TestClass.test_single_user",
+        "title" : "Test single user",
+        "time" : {
+          "start" : 1487579699133,
+          "stop" : 1487579699456,
+          "duration" : 323
+        },
+        "severity" : "MINOR",
+        "status" : "PASSED"
+      }, {
+        "uid" : "682f69c446320c37",
+        "name" : "TestClass.test_single_user_negative",
+        "title" : "Test single user negative",
+        "time" : {
+          "start" : 1487579699460,
+          "stop" : 1487579699787,
+          "duration" : 327
+        },
+        "severity" : "MINOR",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Register",
+    "statistic" : {
+      "total" : 7,
+      "passed" : 3,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 4,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "25d9a83e560210b6",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 7,
+        "passed" : 3,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 4,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "bb9c7f9f49e9c63e",
+        "name" : "TestClass.test_register",
+        "title" : "Test register",
+        "time" : {
+          "start" : 1487579696068,
+          "stop" : 1487579696575,
+          "duration" : 507
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "45099e0334a7cfbf",
+        "name" : "TestClass.test_register_negative_nopasswd",
+        "title" : "Test register negative nopasswd",
+        "time" : {
+          "start" : 1487579696580,
+          "stop" : 1487579697105,
+          "duration" : 525
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "6331dd5b1da2f35f",
+        "name" : "TestClass.test_register_negative_noemail",
+        "title" : "Test register negative noemail",
+        "time" : {
+          "start" : 1487579697110,
+          "stop" : 1487579697453,
+          "duration" : 343
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "cef27c7459518f49",
+        "name" : "TestClass.test_register_negative[symbolic pass]",
+        "title" : "Test register negative [symbolic pass]",
+        "time" : {
+          "start" : 1487579697456,
+          "stop" : 1487579697795,
+          "duration" : 339
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "5d348edf02ed6a8b",
+        "name" : "TestClass.test_register_negative[short pass]",
+        "title" : "Test register negative [short pass]",
+        "time" : {
+          "start" : 1487579697801,
+          "stop" : 1487579698150,
+          "duration" : 349
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "d8abe0910b9da49d",
+        "name" : "TestClass.test_register_negative[symbolic email]",
+        "title" : "Test register negative [symbolic email]",
+        "time" : {
+          "start" : 1487579698161,
+          "stop" : 1487579698757,
+          "duration" : 596
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "3b05e83f0717b860",
+        "name" : "TestClass.test_register_negative[short email]",
+        "title" : "Test register negative [short email]",
+        "time" : {
+          "start" : 1487579698770,
+          "stop" : 1487579699127,
+          "duration" : 357
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  }, {
+    "title" : "Login",
+    "statistic" : {
+      "total" : 9,
+      "passed" : 3,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 6,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "673d241ac1dc04c",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 9,
+        "passed" : 3,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 6,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "c1dd3fe1a12f5004",
+        "name" : "TestClass.test_login",
+        "title" : "Test login",
+        "time" : {
+          "start" : 1487579691830,
+          "stop" : 1487579692353,
+          "duration" : 523
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "ec114063812b35e1",
+        "name" : "TestClass.test_login_negative_nopasswd",
+        "title" : "Test login negative nopasswd",
+        "time" : {
+          "start" : 1487579692359,
+          "stop" : 1487579692878,
+          "duration" : 519
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "676411955ec77dd9",
+        "name" : "TestClass.test_login_negative_noemail",
+        "title" : "Test login negative noemail",
+        "time" : {
+          "start" : 1487579692884,
+          "stop" : 1487579693229,
+          "duration" : 345
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "48cb5fb898adb9b7",
+        "name" : "TestClass.test_login_negative[incorrect pass]",
+        "title" : "Test login negative [incorrect pass]",
+        "time" : {
+          "start" : 1487579693234,
+          "stop" : 1487579693614,
+          "duration" : 380
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "a154cc1716f297b4",
+        "name" : "TestClass.test_login_negative[symbolic pass]",
+        "title" : "Test login negative [symbolic pass]",
+        "time" : {
+          "start" : 1487579693621,
+          "stop" : 1487579694200,
+          "duration" : 579
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "ff0e15104f6d701d",
+        "name" : "TestClass.test_login_negative[short pass]",
+        "title" : "Test login negative [short pass]",
+        "time" : {
+          "start" : 1487579694208,
+          "stop" : 1487579694755,
+          "duration" : 547
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "b05a7fbb471e3c99",
+        "name" : "TestClass.test_login_negative[ incorrect email]",
+        "title" : "Test login negative [ incorrect email]",
+        "time" : {
+          "start" : 1487579694763,
+          "stop" : 1487579695137,
+          "duration" : 374
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "3fbecaeaec6dacaa",
+        "name" : "TestClass.test_login_negative[symbolic email]",
+        "title" : "Test login negative [symbolic email]",
+        "time" : {
+          "start" : 1487579695144,
+          "stop" : 1487579695515,
+          "duration" : 371
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "69c981c23ca7b8cc",
+        "name" : "TestClass.test_login_negative[short email]",
+        "title" : "Test login negative [short email]",
+        "time" : {
+          "start" : 1487579695522,
+          "stop" : 1487579696060,
+          "duration" : 538
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,140 @@
+{
+  "uid" : "ec114063812b35e1",
+  "name" : "TestClass.test_login_negative_nopasswd",
+  "title" : "Test login negative nopasswd",
+  "time" : {
+    "start" : 1487579692359,
+    "stop" : 1487579692878,
+    "duration" : 519
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 5
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Negative: Login test no password",
+    "url" : "Negative: Login test no password"
+  },
+  "suite" : {
+    "uid" : "c1b11da70c9becbb",
+    "name" : "tests.login_test",
+    "title" : "Login test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487579692361,
+      "stop" : 1487579692877,
+      "duration" : 516
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487579692877,
+      "stop" : 1487579692877,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "eb564633-f343-4b04-999d-b7839cfb2608-attachment.json",
+      "type" : "application/json",
+      "size" : 28,
+      "uid" : "8a93384172d1942a"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Sent URL.",
+    "title" : "Sent URL.",
+    "time" : {
+      "start" : 1487579692877,
+      "stop" : 1487579692877,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Sent URL",
+      "source" : "eb09d148-751b-4519-bde5-f8df3d84a5af-attachment.txt",
+      "type" : "text/plain",
+      "size" : 27,
+      "uid" : "6a68a4b4dd917272"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487579692877,
+      "stop" : 1487579692878,
+      "duration" : 1
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487579692878,
+      "stop" : 1487579692878,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Login test no password"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.login_test"
+  }, {
+    "name" : "thread",
+    "value" : "11272-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  } ],
+  "parameters" : [ ]
+}

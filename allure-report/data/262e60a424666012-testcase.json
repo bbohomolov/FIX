@@ -1,0 +1,122 @@
+{
+  "uid" : "262e60a424666012",
+  "name" : "TestClass.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1487546210126,
+    "stop" : 1487546210673,
+    "duration" : 547
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : {
+    "message" : "AssertionError: Response body doesn't contain {\"page\":1,\"per_page\":3,\"total\":12,\"total_pages\":4,\"data\":[{\"id\":1,\"name\":\"cerulean\",\"year\":2000,\"pantone_value\":\"15-4020\"},{\"id\":2,\"name\":\"fuchsia rose\",\"year\":2001,\"pantone_value\":\"17-2031\"},{\"id\":3,\"name\":\"true red\",\"year\":2002,\"pantone_value\":\"19-1664\"}]}\nassert False",
+    "stackTrace" : "self = <reqres_test.TestClass instance at 0x7f65d772f9e0>\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Positive: Login test\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login(self):\n        r = self.send_get_request(self.login_request, {'email': self.email, 'password': self.password})\n        print(r.text)\n        self.attach_response(r.text)\n        self.check_response_status(r.status_code, requests.codes.ok)\n>       self.check_response_body(\"token\", r.text)\n\ntests/reqres_test.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <reqres_test.TestClass instance at 0x7f65d772f9e0>, actual = 'token'\nexpected = '{\"page\":1,\"per_page\":3,\"total\":12,\"total_pages\":4,\"data\":[{\"id\":1,\"name\":\"cerulean\",\"year\":2000,\"pantone_value\":\"15-4...uchsia rose\",\"year\":2001,\"pantone_value\":\"17-2031\"},{\"id\":3,\"name\":\"true red\",\"year\":2002,\"pantone_value\":\"19-1664\"}]}'\n\n    @allure.step(\"Check response body.\")\n    def check_response_body(self, actual, expected):\n        if expected in actual:\n            assert True\n        else:\n>           assert False, \"Response body doesn't contain \" + expected\nE           AssertionError: Response body doesn't contain {\"page\":1,\"per_page\":3,\"total\":12,\"total_pages\":4,\"data\":[{\"id\":1,\"name\":\"cerulean\",\"year\":2000,\"pantone_value\":\"15-4020\"},{\"id\":2,\"name\":\"fuchsia rose\",\"year\":2001,\"pantone_value\":\"17-2031\"},{\"id\":3,\"name\":\"true red\",\"year\":2002,\"pantone_value\":\"19-1664\"}]}\nE           assert False\n\ntests/reqres_test.py:23: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Positive: Login test",
+    "url" : "Positive: Login test"
+  },
+  "suite" : {
+    "uid" : "e05f2ed54575b854",
+    "name" : "reqres_test",
+    "title" : "Reqres test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487546210129,
+      "stop" : 1487546210639,
+      "duration" : 510
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487546210640,
+      "stop" : 1487546210640,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "ec215b55-2117-43d3-a9d1-c27e6829a83e-attachment.json",
+      "type" : "application/json",
+      "size" : 258,
+      "uid" : "53b85f250fc4fbf5"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487546210640,
+      "stop" : 1487546210640,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487546210640,
+      "stop" : 1487546210640,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "reqres_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "testId",
+    "value" : "Positive: Login test"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "thread",
+    "value" : "6866-MainThread"
+  } ],
+  "parameters" : [ ]
+}

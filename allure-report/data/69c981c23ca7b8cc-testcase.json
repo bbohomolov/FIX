@@ -1,0 +1,128 @@
+{
+  "uid" : "69c981c23ca7b8cc",
+  "name" : "TestClass.test_login_negative[short email]",
+  "title" : "Test login negative [short email]",
+  "time" : {
+    "start" : 1487579695522,
+    "stop" : 1487579696060,
+    "duration" : 538
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 4
+  },
+  "failure" : {
+    "message" : "AssertionError: Received response 200 status doesn't equal 400",
+    "stackTrace" : "self = <tests.login_test.TestClass instance at 0x7f73b6796f38>\nparam_test = ('1', 'cityslicka')\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Negative: Login test email/password check\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login_negative(self, param_test):\n        (email, password) = param_test\n        r = u.send_post_request(self.login_request, {'email': email, 'password': password})\n        u.attach_response(r.text)\n        u.attach_sent_URL(r.url)\n>       u.check_response_status(r.status_code, requests.codes.bad)\n\ntests/login_test.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f73b71018c0>, actual = 200\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 200 status doesn't equal 400\n\ntests/my_utils.py:12: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Negative: Login test email/password check",
+    "url" : "Negative: Login test email/password check"
+  },
+  "suite" : {
+    "uid" : "c1b11da70c9becbb",
+    "name" : "tests.login_test",
+    "title" : "Login test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487579695524,
+      "stop" : 1487579696033,
+      "duration" : 509
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487579696033,
+      "stop" : 1487579696033,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "888ff284-a6f3-4b87-8c53-690c2663625a-attachment.json",
+      "type" : "application/json",
+      "size" : 28,
+      "uid" : "8c8683ea4c4d7960"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Sent URL.",
+    "title" : "Sent URL.",
+    "time" : {
+      "start" : 1487579696033,
+      "stop" : 1487579696033,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Sent URL",
+      "source" : "7fd3f7b7-9394-44e3-ab2f-0743f8d7ab65-attachment.txt",
+      "type" : "text/plain",
+      "size" : 27,
+      "uid" : "cd1c799a1e0c08ed"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487579696033,
+      "stop" : 1487579696033,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.login_test"
+  }, {
+    "name" : "thread",
+    "value" : "11272-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Login test email/password check"
+  } ],
+  "parameters" : [ ]
+}

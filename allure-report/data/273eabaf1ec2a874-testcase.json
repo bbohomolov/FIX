@@ -1,0 +1,107 @@
+{
+  "uid" : "273eabaf1ec2a874",
+  "name" : "TestClass.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1487545804846,
+    "stop" : 1487545805225,
+    "duration" : 379
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 3
+  },
+  "failure" : {
+    "message" : "TypeError: cannot concatenate 'str' and 'instance' objects",
+    "stackTrace" : "self = <reqres_test.TestClass instance at 0x7f41f92d19e0>\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Positive: Login test\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login(self):\n        r = self.send_get_request(self.login_request, {'email': self.email, 'password': self.password})\n        print(r.text)\n        self.attach_response(str(r.text))\n>       self.check_response_status(r.status_code == requests.codes.ok)\n\ntests/reqres_test.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nactual = <reqres_test.TestClass instance at 0x7f41f92d19e0>, expected = True\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(actual, expected):\n>       assert actual == expected, \"Received response status \"+actual+\" doesn't equal \"+expected\nE       TypeError: cannot concatenate 'str' and 'instance' objects\n\ntests/reqres_test.py:16: TypeError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Positive: Login test",
+    "url" : "Positive: Login test"
+  },
+  "suite" : {
+    "uid" : "bec13a07bea8634d",
+    "name" : "reqres_test",
+    "title" : "Reqres test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487545804848,
+      "stop" : 1487545805186,
+      "duration" : 338
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487545805187,
+      "stop" : 1487545805187,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "1d8f6354-0130-407b-9c8a-d345fa2f9bd1-attachment.json",
+      "type" : "application/json",
+      "size" : 258,
+      "uid" : "46fa18ce1bdc0781"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487545805187,
+      "stop" : 1487545805187,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "reqres_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "testId",
+    "value" : "Positive: Login test"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "thread",
+    "value" : "6400-MainThread"
+  } ],
+  "parameters" : [ ]
+}

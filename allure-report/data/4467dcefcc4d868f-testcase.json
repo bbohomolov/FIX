@@ -1,0 +1,119 @@
+{
+  "uid" : "4467dcefcc4d868f",
+  "name" : "TestClass.test_register_negative_nopasswd",
+  "title" : "Test register negative nopasswd",
+  "time" : {
+    "start" : 1487555610199,
+    "stop" : 1487555610518,
+    "duration" : 319
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Negative: Register test no password",
+    "url" : "Negative: Register test no password"
+  },
+  "suite" : {
+    "uid" : "d55f1449e4a5719a",
+    "name" : "tests.register_test",
+    "title" : "Register test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487555610201,
+      "stop" : 1487555610517,
+      "duration" : 316
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487555610517,
+      "stop" : 1487555610517,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "1afb1a4a-99da-49d5-80b2-63e5ea866a89-attachment.json",
+      "type" : "application/json",
+      "size" : 28,
+      "uid" : "f563b8dcf55bc03e"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487555610517,
+      "stop" : 1487555610517,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487555610517,
+      "stop" : 1487555610517,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "9770-MainThread"
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Register test no password"
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.register_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "feature",
+    "value" : "Register"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  } ],
+  "parameters" : [ ]
+}

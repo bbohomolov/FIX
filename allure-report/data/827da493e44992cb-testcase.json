@@ -1,0 +1,107 @@
+{
+  "uid" : "827da493e44992cb",
+  "name" : "TestClass.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1487545952064,
+    "stop" : 1487545967713,
+    "duration" : 15649
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 3
+  },
+  "failure" : {
+    "message" : "TypeError: check_response_status() takes exactly 2 arguments (3 given)",
+    "stackTrace" : "self = <reqres_test.TestClass instance at 0x7fd6304f79e0>\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Positive: Login test\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login(self):\n        r = self.send_get_request(self.login_request, {'email': self.email, 'password': self.password})\n        print(r.text)\n        self.attach_response(r.text)\n>       self.check_response_status(r.status_code, requests.codes.ok)\n\ntests/reqres_test.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\na = (<reqres_test.TestClass instance at 0x7fd6304f79e0>, 200, 200), kw = {}\n\n    @wraps(func)\n    def impl(*a, **kw):\n        with StepContext(self.allure, self.title.format(*a, **kw)):\n>           return func(*a, **kw)\nE           TypeError: check_response_status() takes exactly 2 arguments (3 given)\n\n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: TypeError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Positive: Login test",
+    "url" : "Positive: Login test"
+  },
+  "suite" : {
+    "uid" : "e965f76dd3e7e50b",
+    "name" : "reqres_test",
+    "title" : "Reqres test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487545952066,
+      "stop" : 1487545967680,
+      "duration" : 15614
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487545967681,
+      "stop" : 1487545967681,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "15cd89e2-f1e8-43c6-ba08-d7374fe41e97-attachment.json",
+      "type" : "application/json",
+      "size" : 258,
+      "uid" : "b68f889a8ed0ce94"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487545967681,
+      "stop" : 1487545967681,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "reqres_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "testId",
+    "value" : "Positive: Login test"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "6655-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  } ],
+  "parameters" : [ ]
+}

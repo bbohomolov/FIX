@@ -1,0 +1,119 @@
+{
+  "uid" : "8d80a4eebf6b22c8",
+  "name" : "TestClass.test_register_negative_noemail",
+  "title" : "Test register negative noemail",
+  "time" : {
+    "start" : 1487553880811,
+    "stop" : 1487553881136,
+    "duration" : 325
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Negative: Register test no email",
+    "url" : "Negative: Register test no email"
+  },
+  "suite" : {
+    "uid" : "b46cda73db522431",
+    "name" : "tests.register_test",
+    "title" : "Register test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487553880813,
+      "stop" : 1487553881135,
+      "duration" : 322
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487553881135,
+      "stop" : 1487553881135,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "7af20137-c2a7-401a-8449-8e13228e7192-attachment.json",
+      "type" : "application/json",
+      "size" : 37,
+      "uid" : "3c846f1352f2ea2f"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487553881135,
+      "stop" : 1487553881135,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487553881135,
+      "stop" : 1487553881135,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "tests.register_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "feature",
+    "value" : "Register"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Register test no email"
+  }, {
+    "name" : "thread",
+    "value" : "8994-MainThread"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,140 @@
+{
+  "uid" : "bb9c7f9f49e9c63e",
+  "name" : "TestClass.test_register",
+  "title" : "Test register",
+  "time" : {
+    "start" : 1487579696068,
+    "stop" : 1487579696575,
+    "duration" : 507
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 5
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Positive: Register test",
+    "url" : "Positive: Register test"
+  },
+  "suite" : {
+    "uid" : "1138f8f05ffc61ae",
+    "name" : "tests.register_test",
+    "title" : "Register test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487579696071,
+      "stop" : 1487579696573,
+      "duration" : 502
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Sent URL.",
+    "title" : "Sent URL.",
+    "time" : {
+      "start" : 1487579696573,
+      "stop" : 1487579696573,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Sent URL",
+      "source" : "e74d5776-f50b-45a9-9f37-871778854eff-attachment.txt",
+      "type" : "text/plain",
+      "size" : 30,
+      "uid" : "cdc079cc74603037"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487579696573,
+      "stop" : 1487579696574,
+      "duration" : 1
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "9143e257-c29e-4623-971d-0402b82782d2-attachment.json",
+      "type" : "application/json",
+      "size" : 28,
+      "uid" : "751c3e43a10d8cc4"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487579696574,
+      "stop" : 1487579696574,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487579696574,
+      "stop" : 1487579696574,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "tests.register_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "feature",
+    "value" : "Register"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "testId",
+    "value" : "Positive: Register test"
+  }, {
+    "name" : "thread",
+    "value" : "11272-MainThread"
+  } ],
+  "parameters" : [ ]
+}

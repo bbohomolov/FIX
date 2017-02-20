@@ -1,0 +1,128 @@
+{
+  "uid" : "105c7bdcf0d57cac",
+  "name" : "TestClass.test_register_negative[symbolic email]",
+  "title" : "Test register negative [symbolic email]",
+  "time" : {
+    "start" : 1487579498507,
+    "stop" : 1487579498855,
+    "duration" : 348
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 4
+  },
+  "failure" : {
+    "message" : "AssertionError: Received response 201 status doesn't equal 400",
+    "stackTrace" : "self = <tests.register_test.TestClass instance at 0x7f0f51de0bd8>\nparam_test = ('!@^&#%&*', 'cityslicka')\n\n    @allure.feature(\"Register\")\n    @allure.testcase(\"Negative: Register test email/password check\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_register_negative(self, param_test):\n        (email, password) = param_test\n        r = u.send_post_request(self.register_request, {'email': email, 'password': password})\n        u.attach_sent_URL(r.url)\n        u.attach_response(r.text)\n>       u.check_response_status(r.status_code, requests.codes.bad)\n\ntests/register_test.py:65: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f0f526e30e0>, actual = 201\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 201 status doesn't equal 400\n\ntests/my_utils.py:12: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Negative: Register test email/password check",
+    "url" : "Negative: Register test email/password check"
+  },
+  "suite" : {
+    "uid" : "ca8a8a16dbcd2882",
+    "name" : "tests.register_test",
+    "title" : "Register test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487579498510,
+      "stop" : 1487579498836,
+      "duration" : 326
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Sent URL.",
+    "title" : "Sent URL.",
+    "time" : {
+      "start" : 1487579498836,
+      "stop" : 1487579498836,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Sent URL",
+      "source" : "8b354ccd-23b1-47f0-b809-a9d7dca96c9c-attachment.txt",
+      "type" : "text/plain",
+      "size" : 30,
+      "uid" : "f59be935f907ed27"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487579498836,
+      "stop" : 1487579498836,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "4ac69798-2715-47ae-bffb-78c40ccbbf78-attachment.json",
+      "type" : "application/json",
+      "size" : 28,
+      "uid" : "d782a1604f6309b5"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487579498836,
+      "stop" : 1487579498836,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "tests.register_test"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "feature",
+    "value" : "Register"
+  }, {
+    "name" : "thread",
+    "value" : "11164-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Register test email/password check"
+  } ],
+  "parameters" : [ ]
+}

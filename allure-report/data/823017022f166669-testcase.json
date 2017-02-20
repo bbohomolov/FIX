@@ -1,0 +1,119 @@
+{
+  "uid" : "823017022f166669",
+  "name" : "TestClass.test_single_user_negative",
+  "title" : "Test single user negative",
+  "time" : {
+    "start" : 1487555195656,
+    "stop" : 1487555195971,
+    "duration" : 315
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "MINOR",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Negative: Single User test",
+    "url" : "Negative: Single User test"
+  },
+  "suite" : {
+    "uid" : "39222951fe402979",
+    "name" : "tests.single_test",
+    "title" : "Single test"
+  },
+  "steps" : [ {
+    "name" : "Send GET request.",
+    "title" : "Send GET request.",
+    "time" : {
+      "start" : 1487555195657,
+      "stop" : 1487555195969,
+      "duration" : 312
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487555195970,
+      "stop" : 1487555195970,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "07945818-1898-4869-bce5-857beca4e378-attachment.json",
+      "type" : "application/json",
+      "size" : 2656,
+      "uid" : "c019c2ab2a293a76"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487555195970,
+      "stop" : 1487555195970,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487555195970,
+      "stop" : 1487555195970,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "tests.single_test"
+  }, {
+    "name" : "testId",
+    "value" : "Negative: Single User test"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "thread",
+    "value" : "9488-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "Single User"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "aee529a5090cafcb",
+  "name" : "TestClass.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1487540021066,
+    "stop" : 1487540021678,
+    "duration" : 612
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Login",
+    "url" : "Login"
+  },
+  "suite" : {
+    "uid" : "155db6d245b78287",
+    "name" : "reqres_test",
+    "title" : "Reqres test"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Response",
+    "source" : "b2c1b43e-6aae-4d90-ab73-98bb28c23480-attachment.txt",
+    "type" : "text/plain",
+    "size" : 258,
+    "uid" : "203b340e97524a3b"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "4486-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "reqres_test"
+  }, {
+    "name" : "testId",
+    "value" : "Login"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ]
+}

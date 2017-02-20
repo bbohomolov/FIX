@@ -1,0 +1,135 @@
+{
+  "defectsList" : [ {
+    "title" : "Product defects",
+    "status" : "FAILED",
+    "defects" : [ {
+      "uid" : "17a7c6dbb75310e6",
+      "failure" : {
+        "message" : "AssertionError: Received response 201 status doesn't equal 400",
+        "stackTrace" : "self = <tests.register_test.TestClass instance at 0x7f73b674e440>\nparam_test = ('peter@klaven', '!@^&#%&*')\n\n    @allure.feature(\"Register\")\n    @allure.testcase(\"Negative: Register test email/password check\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_register_negative(self, param_test):\n        (email, password) = param_test\n        r = u.send_post_request(self.register_request, {'email': email, 'password': password})\n        u.attach_sent_URL(r.url)\n        u.attach_response(r.text)\n>       u.check_response_status(r.status_code, requests.codes.bad)\n\ntests/register_test.py:65: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f73b70930e0>, actual = 201\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 201 status doesn't equal 400\n\ntests/my_utils.py:12: AssertionError"
+      },
+      "testCases" : [ {
+        "uid" : "cef27c7459518f49",
+        "name" : "TestClass.test_register_negative[symbolic pass]",
+        "title" : "Test register negative [symbolic pass]",
+        "time" : {
+          "start" : 1487579697456,
+          "stop" : 1487579697795,
+          "duration" : 339
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "5d348edf02ed6a8b",
+        "name" : "TestClass.test_register_negative[short pass]",
+        "title" : "Test register negative [short pass]",
+        "time" : {
+          "start" : 1487579697801,
+          "stop" : 1487579698150,
+          "duration" : 349
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "d8abe0910b9da49d",
+        "name" : "TestClass.test_register_negative[symbolic email]",
+        "title" : "Test register negative [symbolic email]",
+        "time" : {
+          "start" : 1487579698161,
+          "stop" : 1487579698757,
+          "duration" : 596
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "3b05e83f0717b860",
+        "name" : "TestClass.test_register_negative[short email]",
+        "title" : "Test register negative [short email]",
+        "time" : {
+          "start" : 1487579698770,
+          "stop" : 1487579699127,
+          "duration" : 357
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      } ]
+    }, {
+      "uid" : "71ab7cdd9e5b4651",
+      "failure" : {
+        "message" : "AssertionError: Received response 200 status doesn't equal 400",
+        "stackTrace" : "self = <tests.login_test.TestClass instance at 0x7f73b67dc950>\nparam_test = ('peter@klaven', 'abcdefg')\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Negative: Login test email/password check\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login_negative(self, param_test):\n        (email, password) = param_test\n        r = u.send_post_request(self.login_request, {'email': email, 'password': password})\n        u.attach_response(r.text)\n        u.attach_sent_URL(r.url)\n>       u.check_response_status(r.status_code, requests.codes.bad)\n\ntests/login_test.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f73b71018c0>, actual = 200\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 200 status doesn't equal 400\n\ntests/my_utils.py:12: AssertionError"
+      },
+      "testCases" : [ {
+        "uid" : "48cb5fb898adb9b7",
+        "name" : "TestClass.test_login_negative[incorrect pass]",
+        "title" : "Test login negative [incorrect pass]",
+        "time" : {
+          "start" : 1487579693234,
+          "stop" : 1487579693614,
+          "duration" : 380
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "a154cc1716f297b4",
+        "name" : "TestClass.test_login_negative[symbolic pass]",
+        "title" : "Test login negative [symbolic pass]",
+        "time" : {
+          "start" : 1487579693621,
+          "stop" : 1487579694200,
+          "duration" : 579
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "ff0e15104f6d701d",
+        "name" : "TestClass.test_login_negative[short pass]",
+        "title" : "Test login negative [short pass]",
+        "time" : {
+          "start" : 1487579694208,
+          "stop" : 1487579694755,
+          "duration" : 547
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "b05a7fbb471e3c99",
+        "name" : "TestClass.test_login_negative[ incorrect email]",
+        "title" : "Test login negative [ incorrect email]",
+        "time" : {
+          "start" : 1487579694763,
+          "stop" : 1487579695137,
+          "duration" : 374
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "3fbecaeaec6dacaa",
+        "name" : "TestClass.test_login_negative[symbolic email]",
+        "title" : "Test login negative [symbolic email]",
+        "time" : {
+          "start" : 1487579695144,
+          "stop" : 1487579695515,
+          "duration" : 371
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "69c981c23ca7b8cc",
+        "name" : "TestClass.test_login_negative[short email]",
+        "title" : "Test login negative [short email]",
+        "time" : {
+          "start" : 1487579695522,
+          "stop" : 1487579696060,
+          "duration" : 538
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  }, {
+    "title" : "Test defects",
+    "status" : "BROKEN",
+    "defects" : [ ]
+  } ]
+}
