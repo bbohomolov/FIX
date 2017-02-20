@@ -1,0 +1,56 @@
+{
+  "uid" : "f9384854022d1374",
+  "name" : "TestClass.test_login_negative[without parameters]",
+  "title" : "Test login negative [without parameters]",
+  "time" : {
+    "start" : 1487588864127,
+    "stop" : 1487588864135,
+    "duration" : 8
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "ValueError: need more than 2 values to unpack",
+    "stackTrace" : "self = <tests.login_test.TestClass instance at 0x7f8f8af08ab8>\nparam_test = ({}, 400)\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Login \")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login_negative(self, param_test):\n>       (data, code, expected_response) = param_test\nE       ValueError: need more than 2 values to unpack\n\ntests/login_test.py:34: ValueError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Login ",
+    "url" : "Login "
+  },
+  "suite" : {
+    "uid" : "268c271d45184ee4",
+    "name" : "tests.login_test",
+    "title" : "Login test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "testId",
+    "value" : "Login "
+  }, {
+    "name" : "thread",
+    "value" : "15182-MainThread"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.login_test"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  } ],
+  "parameters" : [ ]
+}

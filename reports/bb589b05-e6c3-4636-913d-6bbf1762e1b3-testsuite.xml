@@ -1,0 +1,341 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1487591134757" stop="1487591137187">
+  <name>tests.create_test</name>
+  <test-cases>
+    <test-case start="1487591134757" status="passed" stop="1487591135375">
+      <name>TestClass.test_create[successful]</name>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Create"/>
+        <label name="testId" value="Create"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591134760" status="passed" stop="1487591135374">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591135374" status="passed" stop="1487591135374">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="50e022b4-5ce4-4c7d-89d9-c358c6b0cbca-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591135374" status="passed" stop="1487591135374">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="8f2bae02-515d-4aeb-8a3e-5c82be66b54a-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591135374" status="passed" stop="1487591135374">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591135374" status="passed" stop="1487591135374">
+          <title>Check response body.</title>
+          <name>Check response body.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591135385" status="failed" stop="1487591135941">
+      <name>TestClass.test_create[existent user]</name>
+      <failure>
+        <message>AssertionError: Received response 201 status doesn't equal 400</message>
+        <stack-trace>self = &lt;tests.create_test.TestClass instance at 0x7f83822f5c68&gt;
+param_test = ({'job': 'leader', 'name': 'morpheus'}, 400, '')
+
+    @allure.feature("Create")
+    @allure.testcase("Create")
+    @allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test_create(self, param_test):
+        (data, code, expected_response) = param_test
+        r = u.send_post_request(self.create_request, data)
+        u.attach_response(r.text)
+        u.attach_sent_url(r.url+str(data))
+&gt;       u.check_response_status(r.status_code, code)
+
+tests/create_test.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl
+    return func(*a, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;tests.my_utils.MyUtils instance at 0x7f838230c368&gt;, actual = 201
+expected = 400
+
+    @allure.step("Check response status.")
+    def check_response_status(self, actual, expected):
+&gt;       assert actual == expected, "Received response " + str(actual) + " status doesn't equal " + str(expected)
+E       AssertionError: Received response 201 status doesn't equal 400
+
+tests/my_utils.py:12: AssertionError</stack-trace>
+      </failure>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Create"/>
+        <label name="testId" value="Create"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591135387" status="passed" stop="1487591135897">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591135897" status="passed" stop="1487591135897">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="0f435a0a-5e88-4c4c-a7d2-1bb3e7fb04e9-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591135897" status="passed" stop="1487591135897">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="75ebdb1a-760b-4f71-92e3-f6d04d729aa8-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591135897" status="failed" stop="1487591135897">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591135947" status="failed" stop="1487591136477">
+      <name>TestClass.test_create[w/o name]</name>
+      <failure>
+        <message>AssertionError: Received response 201 status doesn't equal 400</message>
+        <stack-trace>self = &lt;tests.create_test.TestClass instance at 0x7f8381a6bf38&gt;
+param_test = ({'job': 'leader'}, 400, '')
+
+    @allure.feature("Create")
+    @allure.testcase("Create")
+    @allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test_create(self, param_test):
+        (data, code, expected_response) = param_test
+        r = u.send_post_request(self.create_request, data)
+        u.attach_response(r.text)
+        u.attach_sent_url(r.url+str(data))
+&gt;       u.check_response_status(r.status_code, code)
+
+tests/create_test.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl
+    return func(*a, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;tests.my_utils.MyUtils instance at 0x7f838230c368&gt;, actual = 201
+expected = 400
+
+    @allure.step("Check response status.")
+    def check_response_status(self, actual, expected):
+&gt;       assert actual == expected, "Received response " + str(actual) + " status doesn't equal " + str(expected)
+E       AssertionError: Received response 201 status doesn't equal 400
+
+tests/my_utils.py:12: AssertionError</stack-trace>
+      </failure>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Create"/>
+        <label name="testId" value="Create"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591135949" status="passed" stop="1487591136460">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591136460" status="passed" stop="1487591136460">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="590b9f87-3139-43ca-8c6d-b277fbbc79d9-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591136460" status="passed" stop="1487591136460">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="79f0f14d-f30b-4f95-b790-6a9624d1238a-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591136460" status="failed" stop="1487591136460">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591136483" status="failed" stop="1487591136831">
+      <name>TestClass.test_create[w/o job]</name>
+      <failure>
+        <message>AssertionError: Received response 201 status doesn't equal 400</message>
+        <stack-trace>self = &lt;tests.create_test.TestClass instance at 0x7f8382492680&gt;
+param_test = ({'name': 'morpheus'}, 400, '')
+
+    @allure.feature("Create")
+    @allure.testcase("Create")
+    @allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test_create(self, param_test):
+        (data, code, expected_response) = param_test
+        r = u.send_post_request(self.create_request, data)
+        u.attach_response(r.text)
+        u.attach_sent_url(r.url+str(data))
+&gt;       u.check_response_status(r.status_code, code)
+
+tests/create_test.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl
+    return func(*a, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;tests.my_utils.MyUtils instance at 0x7f838230c368&gt;, actual = 201
+expected = 400
+
+    @allure.step("Check response status.")
+    def check_response_status(self, actual, expected):
+&gt;       assert actual == expected, "Received response " + str(actual) + " status doesn't equal " + str(expected)
+E       AssertionError: Received response 201 status doesn't equal 400
+
+tests/my_utils.py:12: AssertionError</stack-trace>
+      </failure>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Create"/>
+        <label name="testId" value="Create"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591136484" status="passed" stop="1487591136815">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591136815" status="passed" stop="1487591136815">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="c99ba186-b96e-4e1c-a7f7-4e8bada9be97-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591136815" status="passed" stop="1487591136815">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="e310a325-f9f4-424a-82dd-623ec1c090e9-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591136815" status="failed" stop="1487591136815">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591136837" status="failed" stop="1487591137187">
+      <name>TestClass.test_create[w/o parameters]</name>
+      <failure>
+        <message>AssertionError: Received response 201 status doesn't equal 400</message>
+        <stack-trace>self = &lt;tests.create_test.TestClass instance at 0x7f83823f4320&gt;
+param_test = ({}, 400, 'error')
+
+    @allure.feature("Create")
+    @allure.testcase("Create")
+    @allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test_create(self, param_test):
+        (data, code, expected_response) = param_test
+        r = u.send_post_request(self.create_request, data)
+        u.attach_response(r.text)
+        u.attach_sent_url(r.url+str(data))
+&gt;       u.check_response_status(r.status_code, code)
+
+tests/create_test.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl
+    return func(*a, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;tests.my_utils.MyUtils instance at 0x7f838230c368&gt;, actual = 201
+expected = 400
+
+    @allure.step("Check response status.")
+    def check_response_status(self, actual, expected):
+&gt;       assert actual == expected, "Received response " + str(actual) + " status doesn't equal " + str(expected)
+E       AssertionError: Received response 201 status doesn't equal 400
+
+tests/my_utils.py:12: AssertionError</stack-trace>
+      </failure>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Create"/>
+        <label name="testId" value="Create"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591136838" status="passed" stop="1487591137167">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591137167" status="passed" stop="1487591137167">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="9e023271-89ee-41d7-a8d0-8888f64a5dce-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591137167" status="passed" stop="1487591137167">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="1b40585e-8d59-46d3-82ca-41bb312f0475-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591137167" status="failed" stop="1487591137167">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+  <labels/>
+</ns0:test-suite>

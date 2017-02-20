@@ -3,125 +3,184 @@
     "title" : "Product defects",
     "status" : "FAILED",
     "defects" : [ {
-      "uid" : "17a7c6dbb75310e6",
+      "uid" : "e90f261afbecf195",
       "failure" : {
-        "message" : "AssertionError: Received response 201 status doesn't equal 400",
-        "stackTrace" : "self = <tests.register_test.TestClass instance at 0x7f73b674e440>\nparam_test = ('peter@klaven', '!@^&#%&*')\n\n    @allure.feature(\"Register\")\n    @allure.testcase(\"Negative: Register test email/password check\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_register_negative(self, param_test):\n        (email, password) = param_test\n        r = u.send_post_request(self.register_request, {'email': email, 'password': password})\n        u.attach_sent_URL(r.url)\n        u.attach_response(r.text)\n>       u.check_response_status(r.status_code, requests.codes.bad)\n\ntests/register_test.py:65: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f73b70930e0>, actual = 201\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 201 status doesn't equal 400\n\ntests/my_utils.py:12: AssertionError"
+        "message" : "TypeError: coercing to Unicode: need string or buffer, dict found",
+        "stackTrace" : "self = <tests.register_test.TestClass instance at 0x7fa65c740c68>\nparam_test = ({'email': 'sydney@fife', 'password': 'pistol'}, 201, 'token')\n\n    @allure.feature(\"Register\")\n    @allure.testcase(\"Register\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_register(self, param_test):\n        (data, code, expected_response) = param_test\n        r = u.send_post_request(self.register_request, data)\n        u.attach_response(r.text)\n>       u.attach_sent_url(r.url+data)\nE       TypeError: coercing to Unicode: need string or buffer, dict found\n\ntests/register_test.py:38: TypeError"
       },
       "testCases" : [ {
-        "uid" : "cef27c7459518f49",
-        "name" : "TestClass.test_register_negative[symbolic pass]",
-        "title" : "Test register negative [symbolic pass]",
+        "uid" : "d63a3a2494edb11e",
+        "name" : "TestClass.test_register[successful]",
+        "title" : "Test register [successful]",
         "time" : {
-          "start" : 1487579697456,
-          "stop" : 1487579697795,
+          "start" : 1487590992860,
+          "stop" : 1487590993363,
+          "duration" : 503
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "89ee7a92f7cab95c",
+        "name" : "TestClass.test_register[existent account]",
+        "title" : "Test register [existent account]",
+        "time" : {
+          "start" : 1487590993367,
+          "stop" : 1487590993867,
+          "duration" : 500
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "32fee87e79057f17",
+        "name" : "TestClass.test_register[w/o email]",
+        "title" : "Test register [w/o email]",
+        "time" : {
+          "start" : 1487590993872,
+          "stop" : 1487590994216,
+          "duration" : 344
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "24757943b1c58fec",
+        "name" : "TestClass.test_register[w/o password]",
+        "title" : "Test register [w/o password]",
+        "time" : {
+          "start" : 1487590994221,
+          "stop" : 1487590994553,
+          "duration" : 332
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "ed75561f139ac45e",
+        "name" : "TestClass.test_register[invalid email/password]",
+        "title" : "Test register [invalid email/password]",
+        "time" : {
+          "start" : 1487590994559,
+          "stop" : 1487590994898,
           "duration" : 339
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"
       }, {
-        "uid" : "5d348edf02ed6a8b",
-        "name" : "TestClass.test_register_negative[short pass]",
-        "title" : "Test register negative [short pass]",
+        "uid" : "677cf004c1cfb4da",
+        "name" : "TestClass.test_register[w/o parameters]",
+        "title" : "Test register [w/o parameters]",
         "time" : {
-          "start" : 1487579697801,
-          "stop" : 1487579698150,
-          "duration" : 349
+          "start" : 1487590994904,
+          "stop" : 1487590995235,
+          "duration" : 331
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"
       }, {
-        "uid" : "d8abe0910b9da49d",
-        "name" : "TestClass.test_register_negative[symbolic email]",
-        "title" : "Test register negative [symbolic email]",
+        "uid" : "2d7ecb2c2ef0ad37",
+        "name" : "TestClass.test_login[successful]",
+        "title" : "Test login [successful]",
         "time" : {
-          "start" : 1487579698161,
-          "stop" : 1487579698757,
-          "duration" : 596
+          "start" : 1487590991127,
+          "stop" : 1487590991502,
+          "duration" : 375
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"
       }, {
-        "uid" : "3b05e83f0717b860",
-        "name" : "TestClass.test_register_negative[short email]",
-        "title" : "Test register negative [short email]",
+        "uid" : "f3f733a532088110",
+        "name" : "TestClass.test_login[w/o email]",
+        "title" : "Test login [w/o email]",
         "time" : {
-          "start" : 1487579698770,
-          "stop" : 1487579699127,
-          "duration" : 357
-        },
-        "severity" : "CRITICAL",
-        "status" : "FAILED"
-      } ]
-    }, {
-      "uid" : "71ab7cdd9e5b4651",
-      "failure" : {
-        "message" : "AssertionError: Received response 200 status doesn't equal 400",
-        "stackTrace" : "self = <tests.login_test.TestClass instance at 0x7f73b67dc950>\nparam_test = ('peter@klaven', 'abcdefg')\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Negative: Login test email/password check\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login_negative(self, param_test):\n        (email, password) = param_test\n        r = u.send_post_request(self.login_request, {'email': email, 'password': password})\n        u.attach_response(r.text)\n        u.attach_sent_URL(r.url)\n>       u.check_response_status(r.status_code, requests.codes.bad)\n\ntests/login_test.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f73b71018c0>, actual = 200\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 200 status doesn't equal 400\n\ntests/my_utils.py:12: AssertionError"
-      },
-      "testCases" : [ {
-        "uid" : "48cb5fb898adb9b7",
-        "name" : "TestClass.test_login_negative[incorrect pass]",
-        "title" : "Test login negative [incorrect pass]",
-        "time" : {
-          "start" : 1487579693234,
-          "stop" : 1487579693614,
-          "duration" : 380
+          "start" : 1487590991506,
+          "stop" : 1487590991851,
+          "duration" : 345
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"
       }, {
-        "uid" : "a154cc1716f297b4",
-        "name" : "TestClass.test_login_negative[symbolic pass]",
-        "title" : "Test login negative [symbolic pass]",
+        "uid" : "b4d49b31cec74c3a",
+        "name" : "TestClass.test_login[w/o password]",
+        "title" : "Test login [w/o password]",
         "time" : {
-          "start" : 1487579693621,
-          "stop" : 1487579694200,
-          "duration" : 579
+          "start" : 1487590991854,
+          "stop" : 1487590992180,
+          "duration" : 326
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"
       }, {
-        "uid" : "ff0e15104f6d701d",
-        "name" : "TestClass.test_login_negative[short pass]",
-        "title" : "Test login negative [short pass]",
+        "uid" : "eecab898d3a03c6b",
+        "name" : "TestClass.test_login[invalid email/password]",
+        "title" : "Test login [invalid email/password]",
         "time" : {
-          "start" : 1487579694208,
-          "stop" : 1487579694755,
-          "duration" : 547
+          "start" : 1487590992184,
+          "stop" : 1487590992523,
+          "duration" : 339
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"
       }, {
-        "uid" : "b05a7fbb471e3c99",
-        "name" : "TestClass.test_login_negative[ incorrect email]",
-        "title" : "Test login negative [ incorrect email]",
+        "uid" : "ce7e010b032eae30",
+        "name" : "TestClass.test_login[w/o parameters]",
+        "title" : "Test login [w/o parameters]",
         "time" : {
-          "start" : 1487579694763,
-          "stop" : 1487579695137,
-          "duration" : 374
+          "start" : 1487590992527,
+          "stop" : 1487590992855,
+          "duration" : 328
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"
       }, {
-        "uid" : "3fbecaeaec6dacaa",
-        "name" : "TestClass.test_login_negative[symbolic email]",
-        "title" : "Test login negative [symbolic email]",
+        "uid" : "c0e36c5df4b9e3c2",
+        "name" : "TestClass.test_create[successful]",
+        "title" : "Test create [successful]",
         "time" : {
-          "start" : 1487579695144,
-          "stop" : 1487579695515,
-          "duration" : 371
+          "start" : 1487590988214,
+          "stop" : 1487590988824,
+          "duration" : 610
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"
       }, {
-        "uid" : "69c981c23ca7b8cc",
-        "name" : "TestClass.test_login_negative[short email]",
-        "title" : "Test login negative [short email]",
+        "uid" : "c8e24ea5ae2895eb",
+        "name" : "TestClass.test_create[existent user]",
+        "title" : "Test create [existent user]",
         "time" : {
-          "start" : 1487579695522,
-          "stop" : 1487579696060,
-          "duration" : 538
+          "start" : 1487590988831,
+          "stop" : 1487590989343,
+          "duration" : 512
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "dccefac1e5241eaf",
+        "name" : "TestClass.test_create[w/o name]",
+        "title" : "Test create [w/o name]",
+        "time" : {
+          "start" : 1487590989350,
+          "stop" : 1487590989860,
+          "duration" : 510
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "a2bb12f9b1682aed",
+        "name" : "TestClass.test_create[w/o job]",
+        "title" : "Test create [w/o job]",
+        "time" : {
+          "start" : 1487590989865,
+          "stop" : 1487590990395,
+          "duration" : 530
+        },
+        "severity" : "CRITICAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "4cddb07d1601693",
+        "name" : "TestClass.test_create[w/o parameters]",
+        "title" : "Test create [w/o parameters]",
+        "time" : {
+          "start" : 1487590990400,
+          "stop" : 1487590991120,
+          "duration" : 720
         },
         "severity" : "CRITICAL",
         "status" : "FAILED"

@@ -1,0 +1,92 @@
+{
+  "uid" : "f3f733a532088110",
+  "name" : "TestClass.test_login[w/o email]",
+  "title" : "Test login [w/o email]",
+  "time" : {
+    "start" : 1487590991506,
+    "stop" : 1487590991851,
+    "duration" : 345
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 2
+  },
+  "failure" : {
+    "message" : "TypeError: coercing to Unicode: need string or buffer, dict found",
+    "stackTrace" : "self = <tests.login_test.TestClass instance at 0x7fa65c724518>\nparam_test = ({'password': 'cityslicka'}, 400, 'error')\n\n    @allure.feature(\"Login\")\n    @allure.testcase(\"Login\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_login(self, param_test):\n        (data, code, expected_response) = param_test\n        r = u.send_post_request(self.login_request, data)\n        u.attach_response(r.text)\n>       u.attach_sent_url(r.url+data)\nE       TypeError: coercing to Unicode: need string or buffer, dict found\n\ntests/login_test.py:37: TypeError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Login",
+    "url" : "Login"
+  },
+  "suite" : {
+    "uid" : "6aa58b353e0089",
+    "name" : "tests.login_test",
+    "title" : "Login test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487590991507,
+      "stop" : 1487590991843,
+      "duration" : 336
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487590991843,
+      "stop" : 1487590991843,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "7596c284-856d-4102-ab07-08fe77f60dd2-attachment.json",
+      "type" : "application/json",
+      "size" : 37,
+      "uid" : "4f0065814505c72e"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "testId",
+    "value" : "Login"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "16280-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.login_test"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  } ],
+  "parameters" : [ ]
+}

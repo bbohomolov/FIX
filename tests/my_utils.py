@@ -23,13 +23,8 @@ class MyUtils():
         allure.attach('Received response', text, AttachmentType.JSON)
 
     @allure.step("Sent URL.")
-    def attach_sent_URL(self, text):
+    def attach_sent_url(self, text):
         allure.attach('Sent URL', text, AttachmentType.TEXT)
-
-    @allure.step("Send GET request.")
-    def send_get_request(self, url):
-        print(self.url + url)
-        return requests.get(self.url + url)
 
     @allure.step("Send POST request.")
     def send_post_request(self, url, data):

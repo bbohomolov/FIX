@@ -3,14 +3,18 @@ import requests
 import pytest
 from my_utils import MyUtils
 
-u = MyUtils()
+
 param_list = [
-        ("peter@klaven", "!@^&#%&*"),
-        ("peter@klaven", "1"),
-        ("!@^&#%&*", "cityslicka"),
-        ("1", "cityslicka")
+        ({"email": "sydney@fife", "password": "pistol"}, requests.codes.created, "token"),
+        ({"email": "peter@klaven", "password": "cityslicka"}, requests.codes.bad, "error"),
+        ({"password": "cityslicka"}, requests.codes.bad, "error"),
+        ({"email": "peter@klaven"}, requests.codes.bad, "error"),
+        ({"email": "1", "password": "1"}, requests.codes.not_found, "error"),
+        ({}, requests.codes.bad, "error"),
         ]
-ids_list = ["symbolic pass", "short pass", "symbolic email", "short email"]
+
+ids_list = ["successful","existent account","w/o email","w/o password","invalid email/password","w/o parameters"]
+u = MyUtils()
 
 
 @pytest.fixture(scope='function', params=param_list, ids=ids_list)
@@ -20,47 +24,17 @@ def param_test(request):
 
 class TestClass():
 
-    email = "newpeter@klaven"
-    password = "newcityslicka"
     register_request = "api/register"
+    email = "peter@klaven"
+    password = "cityslicka"
 
     @allure.feature("Register")
-    @allure.testcase("Positive: Register test")
+    @allure.testcase("Register")
     @allure.severity(pytest.allure.severity_level.CRITICAL)
-    def test_register(self):
-        r = u.send_post_request(self.register_request, {'email': self.email, 'password': self.password})
-        u.attach_sent_URL(r.url)
+    def test_register(self, param_test):
+        (data, code, expected_response) = param_test
+        r = u.send_post_request(self.register_request, data)
         u.attach_response(r.text)
-        u.check_response_status(r.status_code, requests.codes.created)
-        u.check_response_body(r.text, "token")
-
-    @allure.feature("Register")
-    @allure.testcase("Negative: Register test no password")
-    @allure.severity(pytest.allure.severity_level.CRITICAL)
-    def test_register_negative_nopasswd(self):
-        r = u.send_post_request(self.register_request, {'email': self.email})
-        u.attach_sent_URL(r.url)
-        u.attach_response(r.text)
-        u.check_response_status(r.status_code, requests.codes.bad)
-        u.check_response_body(r.text, "error")
-
-    @allure.feature("Register")
-    @allure.testcase("Negative: Register test no email")
-    @allure.severity(pytest.allure.severity_level.CRITICAL)
-    def test_register_negative_noemail(self):
-        r = u.send_post_request(self.register_request, {'password': self.password})
-        u.attach_sent_URL(r.url)
-        u.attach_response(r.text)
-        u.check_response_status(r.status_code, requests.codes.bad)
-        u.check_response_body(r.text, "error")
-
-    @allure.feature("Register")
-    @allure.testcase("Negative: Register test email/password check")
-    @allure.severity(pytest.allure.severity_level.CRITICAL)
-    def test_register_negative(self, param_test):
-        (email, password) = param_test
-        r = u.send_post_request(self.register_request, {'email': email, 'password': password})
-        u.attach_sent_URL(r.url)
-        u.attach_response(r.text)
-        u.check_response_status(r.status_code, requests.codes.bad)
-        u.check_response_body(r.text, "error")
+        u.attach_sent_url(r.url+str(data))
+        u.check_response_status(r.status_code, code)
+        u.check_response_body(r.text, expected_response)

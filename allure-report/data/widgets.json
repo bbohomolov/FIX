@@ -2,17 +2,17 @@
   "hash" : "9ae4a52f46fbba0c959575303f697deb73e72d63",
   "data" : [ {
     "statistic" : {
-      "total" : 18,
-      "passed" : 8,
+      "total" : 16,
+      "passed" : 0,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 10,
+      "failed" : 16,
       "broken" : 0
     },
     "time" : {
-      "start" : 1487579691830,
-      "stop" : 1487579699787,
-      "duration" : 7957
+      "start" : 1487590988214,
+      "stop" : 1487590995235,
+      "duration" : 7021
     },
     "name" : "total",
     "type" : "TOTAL"
@@ -20,45 +20,41 @@
     "name" : "defects",
     "type" : "DEFECTS",
     "data" : [ {
-      "count" : 6,
-      "message" : "AssertionError: Received response 200 status doesn't equal 400",
-      "status" : "FAILED"
-    }, {
-      "count" : 4,
-      "message" : "AssertionError: Received response 201 status doesn't equal 400",
+      "count" : 16,
+      "message" : "TypeError: coercing to Unicode: need string or buffer, dict found",
       "status" : "FAILED"
     } ]
   }, {
     "name" : "xunit",
     "type" : "TITLE_STATISTICS",
     "data" : [ {
-      "title" : "Login test",
+      "title" : "Register test",
       "statistic" : {
-        "total" : 9,
-        "passed" : 3,
+        "total" : 6,
+        "passed" : 0,
         "pending" : 0,
         "canceled" : 0,
         "failed" : 6,
         "broken" : 0
       }
     }, {
-      "title" : "Register test",
+      "title" : "Login test",
       "statistic" : {
-        "total" : 7,
-        "passed" : 3,
+        "total" : 5,
+        "passed" : 0,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 4,
+        "failed" : 5,
         "broken" : 0
       }
     }, {
-      "title" : "Single test",
+      "title" : "Create test",
       "statistic" : {
-        "total" : 2,
-        "passed" : 2,
+        "total" : 5,
+        "passed" : 0,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 0,
+        "failed" : 5,
         "broken" : 0
       }
     } ]
@@ -66,33 +62,33 @@
     "name" : "behaviors",
     "type" : "TITLE_STATISTICS",
     "data" : [ {
-      "title" : "Login",
+      "title" : "Create",
       "statistic" : {
-        "total" : 9,
-        "passed" : 3,
+        "total" : 5,
+        "passed" : 0,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 6,
+        "failed" : 5,
+        "broken" : 0
+      }
+    }, {
+      "title" : "Login",
+      "statistic" : {
+        "total" : 5,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 5,
         "broken" : 0
       }
     }, {
       "title" : "Register",
       "statistic" : {
-        "total" : 7,
-        "passed" : 3,
+        "total" : 6,
+        "passed" : 0,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 4,
-        "broken" : 0
-      }
-    }, {
-      "title" : "Single User",
-      "statistic" : {
-        "total" : 2,
-        "passed" : 2,
-        "pending" : 0,
-        "canceled" : 0,
-        "failed" : 0,
+        "failed" : 6,
         "broken" : 0
       }
     } ]

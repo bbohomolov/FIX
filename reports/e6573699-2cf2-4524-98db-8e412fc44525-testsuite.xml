@@ -1,0 +1,338 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1487591139461" stop="1487591141511">
+  <name>tests.register_test</name>
+  <test-cases>
+    <test-case start="1487591139461" status="passed" stop="1487591139791">
+      <name>TestClass.test_register[successful]</name>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Register"/>
+        <label name="testId" value="Register"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591139463" status="passed" stop="1487591139790">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591139790" status="passed" stop="1487591139790">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="38acbf9a-e8e9-4833-a54f-7469b88b2118-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591139790" status="passed" stop="1487591139790">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="668d33d7-3200-4d4c-af1c-971aee28eeb6-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591139790" status="passed" stop="1487591139791">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591139791" status="passed" stop="1487591139791">
+          <title>Check response body.</title>
+          <name>Check response body.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591139795" status="failed" stop="1487591140149">
+      <name>TestClass.test_register[existent account]</name>
+      <failure>
+        <message>AssertionError: Received response 201 status doesn't equal 400</message>
+        <stack-trace>self = &lt;tests.register_test.TestClass instance at 0x7f83819df518&gt;
+param_test = ({'email': 'peter@klaven', 'password': 'cityslicka'}, 400, 'error')
+
+    @allure.feature("Register")
+    @allure.testcase("Register")
+    @allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test_register(self, param_test):
+        (data, code, expected_response) = param_test
+        r = u.send_post_request(self.register_request, data)
+        u.attach_response(r.text)
+        u.attach_sent_url(r.url+str(data))
+&gt;       u.check_response_status(r.status_code, code)
+
+tests/register_test.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl
+    return func(*a, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;tests.my_utils.MyUtils instance at 0x7f83823f4908&gt;, actual = 201
+expected = 400
+
+    @allure.step("Check response status.")
+    def check_response_status(self, actual, expected):
+&gt;       assert actual == expected, "Received response " + str(actual) + " status doesn't equal " + str(expected)
+E       AssertionError: Received response 201 status doesn't equal 400
+
+tests/my_utils.py:12: AssertionError</stack-trace>
+      </failure>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Register"/>
+        <label name="testId" value="Register"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591139796" status="passed" stop="1487591140122">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591140122" status="passed" stop="1487591140122">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="1e4c528d-c23d-4f70-a99d-16d97cba7251-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591140122" status="passed" stop="1487591140122">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="38f5ea79-3923-4efe-9e7b-0c28f9d05cd5-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591140122" status="failed" stop="1487591140123">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591140155" status="passed" stop="1487591140488">
+      <name>TestClass.test_register[w/o email]</name>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Register"/>
+        <label name="testId" value="Register"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591140157" status="passed" stop="1487591140487">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591140488" status="passed" stop="1487591140488">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="72df7794-d917-4cb3-83bd-b666ba8c38ca-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591140488" status="passed" stop="1487591140488">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="4d3e9ff7-1da4-4a99-8996-3d5ee4eff118-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591140488" status="passed" stop="1487591140488">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591140488" status="passed" stop="1487591140488">
+          <title>Check response body.</title>
+          <name>Check response body.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591140492" status="passed" stop="1487591140827">
+      <name>TestClass.test_register[w/o password]</name>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Register"/>
+        <label name="testId" value="Register"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591140493" status="passed" stop="1487591140826">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591140826" status="passed" stop="1487591140826">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="1d4861ef-04ea-4fdd-a592-367f1658c2e5-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591140826" status="passed" stop="1487591140826">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="236d8ac0-ee29-4aa2-9303-acbd9601f557-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591140826" status="passed" stop="1487591140826">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591140826" status="passed" stop="1487591140826">
+          <title>Check response body.</title>
+          <name>Check response body.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591140830" status="failed" stop="1487591141180">
+      <name>TestClass.test_register[invalid email/password]</name>
+      <failure>
+        <message>AssertionError: Received response 201 status doesn't equal 404</message>
+        <stack-trace>self = &lt;tests.register_test.TestClass instance at 0x7f8381a8af80&gt;
+param_test = ({'email': '1', 'password': '1'}, 404, 'error')
+
+    @allure.feature("Register")
+    @allure.testcase("Register")
+    @allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test_register(self, param_test):
+        (data, code, expected_response) = param_test
+        r = u.send_post_request(self.register_request, data)
+        u.attach_response(r.text)
+        u.attach_sent_url(r.url+str(data))
+&gt;       u.check_response_status(r.status_code, code)
+
+tests/register_test.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl
+    return func(*a, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;tests.my_utils.MyUtils instance at 0x7f83823f4908&gt;, actual = 201
+expected = 404
+
+    @allure.step("Check response status.")
+    def check_response_status(self, actual, expected):
+&gt;       assert actual == expected, "Received response " + str(actual) + " status doesn't equal " + str(expected)
+E       AssertionError: Received response 201 status doesn't equal 404
+
+tests/my_utils.py:12: AssertionError</stack-trace>
+      </failure>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Register"/>
+        <label name="testId" value="Register"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591140832" status="passed" stop="1487591141157">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591141157" status="passed" stop="1487591141157">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="46376a05-6238-4d03-b2b6-ec3e20ed0666-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591141157" status="passed" stop="1487591141157">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="777ec3e4-6b6b-4a9a-9d65-3d62c0ef1143-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591141157" status="failed" stop="1487591141157">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1487591141185" status="passed" stop="1487591141511">
+      <name>TestClass.test_register[w/o parameters]</name>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="feature" value="Register"/>
+        <label name="testId" value="Register"/>
+        <label name="thread" value="16411-MainThread"/>
+        <label name="host" value="bbohomolov"/>
+      </labels>
+      <attachments/>
+      <steps>
+        <step start="1487591141187" status="passed" stop="1487591141510">
+          <title>Send POST request.</title>
+          <name>Send POST request.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591141510" status="passed" stop="1487591141510">
+          <title>Received response.</title>
+          <name>Received response.</name>
+          <attachments>
+            <attachment source="c576fff5-bae4-4da4-b383-b0200d729a6a-attachment.json" title="Received response" type="application/json"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591141510" status="passed" stop="1487591141510">
+          <title>Sent URL.</title>
+          <name>Sent URL.</name>
+          <attachments>
+            <attachment source="d6e3d999-6597-4f38-b1a6-d777c22a0fcf-attachment.txt" title="Sent URL" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1487591141510" status="passed" stop="1487591141510">
+          <title>Check response status.</title>
+          <name>Check response status.</name>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1487591141510" status="passed" stop="1487591141510">
+          <title>Check response body.</title>
+          <name>Check response body.</name>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+  <labels/>
+</ns0:test-suite>

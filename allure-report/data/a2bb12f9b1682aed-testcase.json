@@ -1,0 +1,92 @@
+{
+  "uid" : "a2bb12f9b1682aed",
+  "name" : "TestClass.test_create[w/o job]",
+  "title" : "Test create [w/o job]",
+  "time" : {
+    "start" : 1487590989865,
+    "stop" : 1487590990395,
+    "duration" : 530
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 2
+  },
+  "failure" : {
+    "message" : "TypeError: coercing to Unicode: need string or buffer, dict found",
+    "stackTrace" : "self = <tests.create_test.TestClass instance at 0x7fa65c7a2d40>\nparam_test = ({'name': 'morpheus'}, 400, '')\n\n    @allure.feature(\"Create\")\n    @allure.testcase(\"Create\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_create(self, param_test):\n        (data, code, expected_response) = param_test\n        r = u.send_post_request(self.create_request, data)\n        u.attach_response(r.text)\n>       u.attach_sent_url(r.url+data)\nE       TypeError: coercing to Unicode: need string or buffer, dict found\n\ntests/create_test.py:37: TypeError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Create",
+    "url" : "Create"
+  },
+  "suite" : {
+    "uid" : "b1d0da070d24a0d9",
+    "name" : "tests.create_test",
+    "title" : "Create test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487590989867,
+      "stop" : 1487590990387,
+      "duration" : 520
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487590990388,
+      "stop" : 1487590990388,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "56fe48c1-f4a8-4cf4-b2b4-e4f944648c95-attachment.json",
+      "type" : "application/json",
+      "size" : 69,
+      "uid" : "25a60bd5adad310"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Create"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "16280-MainThread"
+  }, {
+    "name" : "testId",
+    "value" : "Create"
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.create_test"
+  } ],
+  "parameters" : [ ]
+}

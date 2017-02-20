@@ -1,0 +1,92 @@
+{
+  "uid" : "32fee87e79057f17",
+  "name" : "TestClass.test_register[w/o email]",
+  "title" : "Test register [w/o email]",
+  "time" : {
+    "start" : 1487590993872,
+    "stop" : 1487590994216,
+    "duration" : 344
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 2
+  },
+  "failure" : {
+    "message" : "TypeError: coercing to Unicode: need string or buffer, dict found",
+    "stackTrace" : "self = <tests.register_test.TestClass instance at 0x7fa65c7a0b90>\nparam_test = ({'password': 'cityslicka'}, 400, 'error')\n\n    @allure.feature(\"Register\")\n    @allure.testcase(\"Register\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_register(self, param_test):\n        (data, code, expected_response) = param_test\n        r = u.send_post_request(self.register_request, data)\n        u.attach_response(r.text)\n>       u.attach_sent_url(r.url+data)\nE       TypeError: coercing to Unicode: need string or buffer, dict found\n\ntests/register_test.py:38: TypeError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Register",
+    "url" : "Register"
+  },
+  "suite" : {
+    "uid" : "7eaf7c37764e6c49",
+    "name" : "tests.register_test",
+    "title" : "Register test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487590993874,
+      "stop" : 1487590994210,
+      "duration" : 336
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487590994210,
+      "stop" : 1487590994210,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "fd81a102-46d5-4f30-a590-048c526d7dc0-attachment.json",
+      "type" : "application/json",
+      "size" : 37,
+      "uid" : "98c0969ac3c41db7"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "tests.register_test"
+  }, {
+    "name" : "testId",
+    "value" : "Register"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "feature",
+    "value" : "Register"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "16280-MainThread"
+  } ],
+  "parameters" : [ ]
+}
