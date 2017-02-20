@@ -1,0 +1,140 @@
+{
+  "uid" : "1736cd059a63346c",
+  "name" : "TestClass.test_create[successful]",
+  "title" : "Test create [successful]",
+  "time" : {
+    "start" : 1487591134757,
+    "stop" : 1487591135375,
+    "duration" : 618
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 5
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "Create",
+    "url" : "Create"
+  },
+  "suite" : {
+    "uid" : "2c1daf4fc3c4ed24",
+    "name" : "tests.create_test",
+    "title" : "Create test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487591134760,
+      "stop" : 1487591135374,
+      "duration" : 614
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487591135374,
+      "stop" : 1487591135374,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "50e022b4-5ce4-4c7d-89d9-c358c6b0cbca-attachment.json",
+      "type" : "application/json",
+      "size" : 84,
+      "uid" : "2a3635352d5d82f"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Sent URL.",
+    "title" : "Sent URL.",
+    "time" : {
+      "start" : 1487591135374,
+      "stop" : 1487591135374,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Sent URL",
+      "source" : "8f2bae02-515d-4aeb-8a3e-5c82be66b54a-attachment.txt",
+      "type" : "text/plain",
+      "size" : 65,
+      "uid" : "df47616ec4c86340"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487591135374,
+      "stop" : 1487591135374,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response body.",
+    "title" : "Check response body.",
+    "time" : {
+      "start" : 1487591135374,
+      "stop" : 1487591135374,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Create"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "thread",
+    "value" : "16411-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "testId",
+    "value" : "Create"
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.create_test"
+  } ],
+  "parameters" : [ ]
+}

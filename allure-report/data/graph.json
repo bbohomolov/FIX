@@ -1,177 +1,177 @@
 {
   "testCases" : [ {
-    "uid" : "d63a3a2494edb11e",
-    "name" : "TestClass.test_register[successful]",
-    "title" : "Test register [successful]",
-    "time" : {
-      "start" : 1487590992860,
-      "stop" : 1487590993363,
-      "duration" : 503
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "89ee7a92f7cab95c",
-    "name" : "TestClass.test_register[existent account]",
-    "title" : "Test register [existent account]",
-    "time" : {
-      "start" : 1487590993367,
-      "stop" : 1487590993867,
-      "duration" : 500
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "32fee87e79057f17",
-    "name" : "TestClass.test_register[w/o email]",
-    "title" : "Test register [w/o email]",
-    "time" : {
-      "start" : 1487590993872,
-      "stop" : 1487590994216,
-      "duration" : 344
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "24757943b1c58fec",
-    "name" : "TestClass.test_register[w/o password]",
-    "title" : "Test register [w/o password]",
-    "time" : {
-      "start" : 1487590994221,
-      "stop" : 1487590994553,
-      "duration" : 332
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "ed75561f139ac45e",
-    "name" : "TestClass.test_register[invalid email/password]",
-    "title" : "Test register [invalid email/password]",
-    "time" : {
-      "start" : 1487590994559,
-      "stop" : 1487590994898,
-      "duration" : 339
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "677cf004c1cfb4da",
-    "name" : "TestClass.test_register[w/o parameters]",
-    "title" : "Test register [w/o parameters]",
-    "time" : {
-      "start" : 1487590994904,
-      "stop" : 1487590995235,
-      "duration" : 331
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "2d7ecb2c2ef0ad37",
+    "uid" : "e2d275eeeda8cb3",
     "name" : "TestClass.test_login[successful]",
     "title" : "Test login [successful]",
     "time" : {
-      "start" : 1487590991127,
-      "stop" : 1487590991502,
-      "duration" : 375
+      "start" : 1487591137194,
+      "stop" : 1487591137703,
+      "duration" : 509
     },
     "severity" : "CRITICAL",
-    "status" : "FAILED"
+    "status" : "PASSED"
   }, {
-    "uid" : "f3f733a532088110",
+    "uid" : "d2e46d07cb380e24",
     "name" : "TestClass.test_login[w/o email]",
     "title" : "Test login [w/o email]",
     "time" : {
-      "start" : 1487590991506,
-      "stop" : 1487590991851,
-      "duration" : 345
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "b4d49b31cec74c3a",
-    "name" : "TestClass.test_login[w/o password]",
-    "title" : "Test login [w/o password]",
-    "time" : {
-      "start" : 1487590991854,
-      "stop" : 1487590992180,
-      "duration" : 326
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "eecab898d3a03c6b",
-    "name" : "TestClass.test_login[invalid email/password]",
-    "title" : "Test login [invalid email/password]",
-    "time" : {
-      "start" : 1487590992184,
-      "stop" : 1487590992523,
-      "duration" : 339
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "ce7e010b032eae30",
-    "name" : "TestClass.test_login[w/o parameters]",
-    "title" : "Test login [w/o parameters]",
-    "time" : {
-      "start" : 1487590992527,
-      "stop" : 1487590992855,
-      "duration" : 328
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "c0e36c5df4b9e3c2",
-    "name" : "TestClass.test_create[successful]",
-    "title" : "Test create [successful]",
-    "time" : {
-      "start" : 1487590988214,
-      "stop" : 1487590988824,
-      "duration" : 610
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "c8e24ea5ae2895eb",
-    "name" : "TestClass.test_create[existent user]",
-    "title" : "Test create [existent user]",
-    "time" : {
-      "start" : 1487590988831,
-      "stop" : 1487590989343,
-      "duration" : 512
-    },
-    "severity" : "CRITICAL",
-    "status" : "FAILED"
-  }, {
-    "uid" : "dccefac1e5241eaf",
-    "name" : "TestClass.test_create[w/o name]",
-    "title" : "Test create [w/o name]",
-    "time" : {
-      "start" : 1487590989350,
-      "stop" : 1487590989860,
+      "start" : 1487591137708,
+      "stop" : 1487591138218,
       "duration" : 510
     },
     "severity" : "CRITICAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "8ff17a01cb68fca",
+    "name" : "TestClass.test_login[w/o password]",
+    "title" : "Test login [w/o password]",
+    "time" : {
+      "start" : 1487591138223,
+      "stop" : 1487591138555,
+      "duration" : 332
+    },
+    "severity" : "CRITICAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "d65be5ae1de987d5",
+    "name" : "TestClass.test_login[invalid email/password]",
+    "title" : "Test login [invalid email/password]",
+    "time" : {
+      "start" : 1487591138559,
+      "stop" : 1487591139113,
+      "duration" : 554
+    },
+    "severity" : "CRITICAL",
     "status" : "FAILED"
   }, {
-    "uid" : "a2bb12f9b1682aed",
-    "name" : "TestClass.test_create[w/o job]",
-    "title" : "Test create [w/o job]",
+    "uid" : "2cf045ad18dcadbf",
+    "name" : "TestClass.test_login[w/o parameters]",
+    "title" : "Test login [w/o parameters]",
     "time" : {
-      "start" : 1487590989865,
-      "stop" : 1487590990395,
+      "start" : 1487591139121,
+      "stop" : 1487591139457,
+      "duration" : 336
+    },
+    "severity" : "CRITICAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "7d83917b305d1472",
+    "name" : "TestClass.test_register[successful]",
+    "title" : "Test register [successful]",
+    "time" : {
+      "start" : 1487591139461,
+      "stop" : 1487591139791,
+      "duration" : 330
+    },
+    "severity" : "CRITICAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "400e2c651f369677",
+    "name" : "TestClass.test_register[existent account]",
+    "title" : "Test register [existent account]",
+    "time" : {
+      "start" : 1487591139795,
+      "stop" : 1487591140149,
+      "duration" : 354
+    },
+    "severity" : "CRITICAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "6362c41effcd93f4",
+    "name" : "TestClass.test_register[w/o email]",
+    "title" : "Test register [w/o email]",
+    "time" : {
+      "start" : 1487591140155,
+      "stop" : 1487591140488,
+      "duration" : 333
+    },
+    "severity" : "CRITICAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "a8306739f522ec79",
+    "name" : "TestClass.test_register[w/o password]",
+    "title" : "Test register [w/o password]",
+    "time" : {
+      "start" : 1487591140492,
+      "stop" : 1487591140827,
+      "duration" : 335
+    },
+    "severity" : "CRITICAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "b0a4253e69333962",
+    "name" : "TestClass.test_register[invalid email/password]",
+    "title" : "Test register [invalid email/password]",
+    "time" : {
+      "start" : 1487591140830,
+      "stop" : 1487591141180,
+      "duration" : 350
+    },
+    "severity" : "CRITICAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "35917dbaa3a12a38",
+    "name" : "TestClass.test_register[w/o parameters]",
+    "title" : "Test register [w/o parameters]",
+    "time" : {
+      "start" : 1487591141185,
+      "stop" : 1487591141511,
+      "duration" : 326
+    },
+    "severity" : "CRITICAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "1736cd059a63346c",
+    "name" : "TestClass.test_create[successful]",
+    "title" : "Test create [successful]",
+    "time" : {
+      "start" : 1487591134757,
+      "stop" : 1487591135375,
+      "duration" : 618
+    },
+    "severity" : "CRITICAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "94d7bbfe85f019b7",
+    "name" : "TestClass.test_create[existent user]",
+    "title" : "Test create [existent user]",
+    "time" : {
+      "start" : 1487591135385,
+      "stop" : 1487591135941,
+      "duration" : 556
+    },
+    "severity" : "CRITICAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "98385f6e18286317",
+    "name" : "TestClass.test_create[w/o name]",
+    "title" : "Test create [w/o name]",
+    "time" : {
+      "start" : 1487591135947,
+      "stop" : 1487591136477,
       "duration" : 530
     },
     "severity" : "CRITICAL",
     "status" : "FAILED"
   }, {
-    "uid" : "4cddb07d1601693",
+    "uid" : "41f942cc6f3f0e39",
+    "name" : "TestClass.test_create[w/o job]",
+    "title" : "Test create [w/o job]",
+    "time" : {
+      "start" : 1487591136483,
+      "stop" : 1487591136831,
+      "duration" : 348
+    },
+    "severity" : "CRITICAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "974777b95e5c1e5b",
     "name" : "TestClass.test_create[w/o parameters]",
     "title" : "Test create [w/o parameters]",
     "time" : {
-      "start" : 1487590990400,
-      "stop" : 1487590991120,
-      "duration" : 720
+      "start" : 1487591136837,
+      "stop" : 1487591137187,
+      "duration" : 350
     },
     "severity" : "CRITICAL",
     "status" : "FAILED"

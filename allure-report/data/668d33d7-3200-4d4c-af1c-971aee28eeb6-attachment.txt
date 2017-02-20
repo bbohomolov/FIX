@@ -1,0 +1,1 @@
+https://reqres.in/api/register{'password': 'pistol', 'email': 'sydney@fife'}

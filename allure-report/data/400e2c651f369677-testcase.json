@@ -1,0 +1,128 @@
+{
+  "uid" : "400e2c651f369677",
+  "name" : "TestClass.test_register[existent account]",
+  "title" : "Test register [existent account]",
+  "time" : {
+    "start" : 1487591139795,
+    "stop" : 1487591140149,
+    "duration" : 354
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 4
+  },
+  "failure" : {
+    "message" : "AssertionError: Received response 201 status doesn't equal 400",
+    "stackTrace" : "self = <tests.register_test.TestClass instance at 0x7f83819df518>\nparam_test = ({'email': 'peter@klaven', 'password': 'cityslicka'}, 400, 'error')\n\n    @allure.feature(\"Register\")\n    @allure.testcase(\"Register\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_register(self, param_test):\n        (data, code, expected_response) = param_test\n        r = u.send_post_request(self.register_request, data)\n        u.attach_response(r.text)\n        u.attach_sent_url(r.url+str(data))\n>       u.check_response_status(r.status_code, code)\n\ntests/register_test.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f83823f4908>, actual = 201\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 201 status doesn't equal 400\n\ntests/my_utils.py:12: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Register",
+    "url" : "Register"
+  },
+  "suite" : {
+    "uid" : "5d722e79c67738ed",
+    "name" : "tests.register_test",
+    "title" : "Register test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487591139796,
+      "stop" : 1487591140122,
+      "duration" : 326
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487591140122,
+      "stop" : 1487591140122,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "1e4c528d-c23d-4f70-a99d-16d97cba7251-attachment.json",
+      "type" : "application/json",
+      "size" : 28,
+      "uid" : "f61448c9918fee24"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Sent URL.",
+    "title" : "Sent URL.",
+    "time" : {
+      "start" : 1487591140122,
+      "stop" : 1487591140122,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Sent URL",
+      "source" : "38f5ea79-3923-4efe-9e7b-0c28f9d05cd5-attachment.txt",
+      "type" : "text/plain",
+      "size" : 81,
+      "uid" : "4ce3e80a09ead886"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487591140122,
+      "stop" : 1487591140123,
+      "duration" : 1
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "tests.register_test"
+  }, {
+    "name" : "testId",
+    "value" : "Register"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "feature",
+    "value" : "Register"
+  }, {
+    "name" : "thread",
+    "value" : "16411-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  } ],
+  "parameters" : [ ]
+}

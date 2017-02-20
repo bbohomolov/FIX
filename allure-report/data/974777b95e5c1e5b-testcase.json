@@ -1,0 +1,128 @@
+{
+  "uid" : "974777b95e5c1e5b",
+  "name" : "TestClass.test_create[w/o parameters]",
+  "title" : "Test create [w/o parameters]",
+  "time" : {
+    "start" : 1487591136837,
+    "stop" : 1487591137187,
+    "duration" : 350
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 4
+  },
+  "failure" : {
+    "message" : "AssertionError: Received response 201 status doesn't equal 400",
+    "stackTrace" : "self = <tests.create_test.TestClass instance at 0x7f83823f4320>\nparam_test = ({}, 400, 'error')\n\n    @allure.feature(\"Create\")\n    @allure.testcase(\"Create\")\n    @allure.severity(pytest.allure.severity_level.CRITICAL)\n    def test_create(self, param_test):\n        (data, code, expected_response) = param_test\n        r = u.send_post_request(self.create_request, data)\n        u.attach_response(r.text)\n        u.attach_sent_url(r.url+str(data))\n>       u.check_response_status(r.status_code, code)\n\ntests/create_test.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/usr/local/lib/python2.7/dist-packages/allure/common.py:57: in impl\n    return func(*a, **kw)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.my_utils.MyUtils instance at 0x7f838230c368>, actual = 201\nexpected = 400\n\n    @allure.step(\"Check response status.\")\n    def check_response_status(self, actual, expected):\n>       assert actual == expected, \"Received response \" + str(actual) + \" status doesn't equal \" + str(expected)\nE       AssertionError: Received response 201 status doesn't equal 400\n\ntests/my_utils.py:12: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "Create",
+    "url" : "Create"
+  },
+  "suite" : {
+    "uid" : "2c1daf4fc3c4ed24",
+    "name" : "tests.create_test",
+    "title" : "Create test"
+  },
+  "steps" : [ {
+    "name" : "Send POST request.",
+    "title" : "Send POST request.",
+    "time" : {
+      "start" : 1487591136838,
+      "stop" : 1487591137167,
+      "duration" : 329
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Received response.",
+    "title" : "Received response.",
+    "time" : {
+      "start" : 1487591137167,
+      "stop" : 1487591137167,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Received response",
+      "source" : "9e023271-89ee-41d7-a8d0-8888f64a5dce-attachment.json",
+      "type" : "application/json",
+      "size" : 51,
+      "uid" : "31a74bc7f0f12491"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Sent URL.",
+    "title" : "Sent URL.",
+    "time" : {
+      "start" : 1487591137167,
+      "stop" : 1487591137167,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Sent URL",
+      "source" : "1b40585e-8d59-46d3-82ca-41bb312f0475-attachment.txt",
+      "type" : "text/plain",
+      "size" : 30,
+      "uid" : "3a368919938054a8"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check response status.",
+    "title" : "Check response status.",
+    "time" : {
+      "start" : 1487591137167,
+      "stop" : 1487591137167,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Create"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "bbohomolov"
+  }, {
+    "name" : "thread",
+    "value" : "16411-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "testId",
+    "value" : "Create"
+  }, {
+    "name" : "suite-name",
+    "value" : "tests.create_test"
+  } ],
+  "parameters" : [ ]
+}

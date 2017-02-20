@@ -3,16 +3,16 @@
   "data" : [ {
     "statistic" : {
       "total" : 16,
-      "passed" : 0,
+      "passed" : 9,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 16,
+      "failed" : 7,
       "broken" : 0
     },
     "time" : {
-      "start" : 1487590988214,
-      "stop" : 1487590995235,
-      "duration" : 7021
+      "start" : 1487591134757,
+      "stop" : 1487591141511,
+      "duration" : 6754
     },
     "name" : "total",
     "type" : "TOTAL"
@@ -20,41 +20,49 @@
     "name" : "defects",
     "type" : "DEFECTS",
     "data" : [ {
-      "count" : 16,
-      "message" : "TypeError: coercing to Unicode: need string or buffer, dict found",
+      "count" : 5,
+      "message" : "AssertionError: Received response 201 status doesn't equal 400",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Received response 200 status doesn't equal 404",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Received response 201 status doesn't equal 404",
       "status" : "FAILED"
     } ]
   }, {
     "name" : "xunit",
     "type" : "TITLE_STATISTICS",
     "data" : [ {
+      "title" : "Create test",
+      "statistic" : {
+        "total" : 5,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 4,
+        "broken" : 0
+      }
+    }, {
       "title" : "Register test",
       "statistic" : {
         "total" : 6,
-        "passed" : 0,
+        "passed" : 4,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 6,
+        "failed" : 2,
         "broken" : 0
       }
     }, {
       "title" : "Login test",
       "statistic" : {
         "total" : 5,
-        "passed" : 0,
+        "passed" : 4,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 5,
-        "broken" : 0
-      }
-    }, {
-      "title" : "Create test",
-      "statistic" : {
-        "total" : 5,
-        "passed" : 0,
-        "pending" : 0,
-        "canceled" : 0,
-        "failed" : 5,
+        "failed" : 1,
         "broken" : 0
       }
     } ]
@@ -65,30 +73,30 @@
       "title" : "Create",
       "statistic" : {
         "total" : 5,
-        "passed" : 0,
+        "passed" : 1,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 5,
+        "failed" : 4,
         "broken" : 0
       }
     }, {
       "title" : "Login",
       "statistic" : {
         "total" : 5,
-        "passed" : 0,
+        "passed" : 4,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 5,
+        "failed" : 1,
         "broken" : 0
       }
     }, {
       "title" : "Register",
       "statistic" : {
         "total" : 6,
-        "passed" : 0,
+        "passed" : 4,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 6,
+        "failed" : 2,
         "broken" : 0
       }
     } ]
