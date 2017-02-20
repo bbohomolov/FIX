@@ -1,0 +1,12 @@
+{
+  "login_test.py::TestClass::()::test_login_negative[ incorrect email]": true, 
+  "login_test.py::TestClass::()::test_login_negative[incorrect pass]": true, 
+  "login_test.py::TestClass::()::test_login_negative[short email]": true, 
+  "login_test.py::TestClass::()::test_login_negative[short pass]": true, 
+  "login_test.py::TestClass::()::test_login_negative[symbolic email]": true, 
+  "login_test.py::TestClass::()::test_login_negative[symbolic pass]": true, 
+  "register_test.py::TestClass::()::test_register_negative[short email]": true, 
+  "register_test.py::TestClass::()::test_register_negative[short pass]": true, 
+  "register_test.py::TestClass::()::test_register_negative[symbolic email]": true, 
+  "register_test.py::TestClass::()::test_register_negative[symbolic pass]": true
+}
